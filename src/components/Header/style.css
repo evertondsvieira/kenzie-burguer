@@ -1,0 +1,103 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+
+.centralize-title {
+  margin-left: 8rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.title-one {
+  color: #333333;
+  font-size: 26px;
+  font-family: "Inter";
+}
+
+.title-two {
+  color: #eb5757;
+  font-size: 19px;
+  font-family: "Inter";
+  display: flex;
+  align-self: flex-end;
+}
+
+.centralize-button-header {
+  position: relative;
+  max-width: 22.813rem;
+  padding-right: 8rem;
+}
+
+.filter-input {
+  width: 22.813rem;
+  height: 3.75rem;
+  font-family: "Inter";
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+#input {
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #e0e0e0;
+}
+
+.header-button {
+  position: absolute;
+  width: 6.688rem;
+  height: 2.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  background: #27ae60;
+  border-style: none;
+  border-radius: 8px;
+  top: 12px;
+  right: 125px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #93d7af;
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+    max-width: 100vw;
+    height: 8.688rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .centralize-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0.875rem;
+    margin-bottom: 0.8rem;
+  }
+  .centralize-button-header {
+    margin: 0px;
+    margin-bottom: 1rem;
+    padding-right: 1.2rem;
+  }
+
+  .header-button {
+    max-width: 23.875rem;
+    top: 12px;
+    left: 16.3rem;
+  }
+}

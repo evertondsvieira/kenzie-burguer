@@ -1,0 +1,49 @@
+.centralize-product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.search {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #828282;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 2.375rem;
+}
+
+.search span {
+  color: #333333;
+}
+
+@media only screen and (max-width: 425px) {
+  .centralize-product-list {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .product-row {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: unset;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 0.8rem;
+  }
+}

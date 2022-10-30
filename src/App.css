@@ -2,11 +2,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: row;
   margin-top: 1.875rem;
   margin-left: 7.188rem;
   margin-right: 7.188rem;
-  gap: 10px;
 }
 
 @media only screen and (max-width: 1024px) {

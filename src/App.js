@@ -37,7 +37,7 @@ function App() {
       setCurrentSale([...currentSale, product])
       toast.success("Item adicionado")
     } else {
-      toast.error("O item já foi adicionado")
+      toast.error("O item já está no carrinho")
     }
   }
   

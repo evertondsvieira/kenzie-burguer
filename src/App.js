@@ -37,29 +37,30 @@ function App() {
       setCurrentSale([...currentSale, product])
       toast.success("Item adicionado")
     } else {
-      toast.error("O item já foi adicionado")
+      toast.error("O item já está no carrinho")
     }
   }
   
   return (
     <>
       <Header showProducts={showProducts}
-      setInput={setInput}
-      input={input}/>
+        setInput={setInput}
+        input={input}
+      />
       <div className='main-container'>
-        <ToastContainer />
         <ProductsList 
-        search={search}
-        products={products}
-        filteredProducts={filteredProducts}
-        handleClick={handleClick}
+          search={search}
+          products={products}
+          filteredProducts={filteredProducts}
+          handleClick={handleClick}
         />
         <Cart 
-        sum={sum}
-        currentSale={currentSale}
-        setCurrentSale={setCurrentSale}
+          sum={sum}
+          currentSale={currentSale}
+          setCurrentSale={setCurrentSale}
         />
       </div>
+      <ToastContainer />
     </>
   )
 }

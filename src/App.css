@@ -3,12 +3,13 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 1.875rem;
-  margin-left: 7.188rem;
-  margin-right: 7.188rem;
+  margin-left: 6.25rem;
+  margin-right: 7.5rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .main-container {
+    min-width: 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -17,12 +18,12 @@
 
 @media only screen and (max-width: 425px) {
   .main-container {
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 0px;
+    margin-left: 0.5rem;
+    margin-right: 0;
   }
 }
